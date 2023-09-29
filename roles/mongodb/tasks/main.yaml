@@ -1,0 +1,4 @@
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: mongodb.repo
+    dest: /etc/yum.repos.d/mongo.repo
