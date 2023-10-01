@@ -1,0 +1,26 @@
+# we need to import common nodejs role into our catalogue role
+- name: Install NodeJS
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: nodejs
+
+- name: Setup App
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-setup
+
+
+- name: install dependencies
+  ansible.builtin.command: npm install
+  args:
+    chdir: /app
+
+- name: Load Schema
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: loadmongo-schema
+
+- name: Systemd setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd-setup
