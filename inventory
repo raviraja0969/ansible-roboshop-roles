@@ -1,5 +1,5 @@
 [catalogue]
-catalogue.ravistarfuture.online
+catalogue.ravistarfuture.online  component=catalogue
 
 [mongodb]
 mongodb.ravistarfuture.online
