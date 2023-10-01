@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.ravistarfuture.online
+USER_HOST: user.ravistarfuture.online
+SHIPPING_HOST: shipping.ravistarfuture.online
+CART_HOST: cart.ravistarfuture.online
+PAYMENT_HOST: payment.ravistarfuture.online
